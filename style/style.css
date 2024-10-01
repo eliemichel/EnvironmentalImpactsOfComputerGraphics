@@ -1,0 +1,225 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0.5em;
+
+	/*
+	--primary-color: #209cee; #4985ad
+	*/
+
+	--button-color: #80b90b;
+	--link-color: #80b90b;
+}
+
+main {
+	max-width: 50em;
+	margin: auto;
+}
+
+img, video {
+	max-width: 100%;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+header hgroup {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 3em;
+}
+
+header h1 {
+	font-weight: 800;
+	margin-bottom: 0.3em;
+}
+
+header h1 a {
+	color: #333;
+}
+
+header hgroup p {
+	font-size: 1.3em;
+	font-style: italic;
+	margin-bottom: 0.5em;
+}
+
+header hgroup time {
+	font-size: 0.9em;
+}
+header hgroup time .date,
+header hgroup time .time {
+	display: block;
+}
+
+h2, h3 {
+	color: #333;
+	position: relative;
+}
+
+@media (min-width: 55em) {
+	a.s-anchor {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translate(-100%, 0);
+		padding-right: 0.2em;
+	}
+}
+a.s-anchor {
+	font-weight: normal;
+	color: #888;
+	visibility: hidden;
+}
+a.s-anchor:hover {
+	color: var(--link-color);
+	text-decoration: none;
+}
+h2:hover a.s-anchor,
+h3:hover a.s-anchor {
+	visibility: visible;
+}
+
+figure {
+	display: table;
+	margin: auto;
+	text-align: center;
+}
+figure figcaption {
+	display: table-caption;
+	caption-side: bottom;
+	font-style: italic;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+footer {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	font-size: 0.85em;
+	color: #555;
+	text-align: center;
+}
+
+section {
+	margin-top: 2em;
+}
+
+.hidden {
+	display: none;
+}
+
+.s-authorlist {
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 4em;
+	text-align: center;
+	margin: 0;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 0;
+}
+
+.s-authorlist .p-author {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.s-authorlist .p-author img {
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.s-authorlist .p-author a.p-name {
+	font-weight: bold;
+}
+
+.s-authorlist .p-author a.p-org {
+	color: #222;
+}
+
+.s-authorlist .p-author ul {
+	list-style: none;
+	margin: 0;
+	margin-top: 0.5rem;
+	padding: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: 0;
+}
+
+.s-authorlist img {
+	max-width: 5rem;
+}
+
+ul.s-download-links {
+	list-style: none;
+	padding: 0;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 1em;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+ul.s-download-links li a {
+	display: inline-block;
+	background-color: var(--button-color);
+	border-radius: 0.3em;
+	padding: 0.2em 0.35em;
+	color: white;
+}
+ul.s-download-links li a:hover {
+	background-color: #79bfed;
+	text-decoration: none;
+}
+
+.s-content {
+	text-align: justify;
+	line-height: 1.3em;
+}
+
+.s-video {
+	display: block;
+	max-width: 100%;
+	margin: auto;
+}
+
+.s-citation {
+	font-family: monospace;
+	white-space-collapse: preserve;
+	border: 1px solid #ccc;
+	border-radius: 0.3em;
+	padding: 1em;
+	background-color: #f2f2f2;
+}
+
+img.s-slide-preview {
+	box-shadow: 2px 2px 9px 2px #00000014;
+}
+
+blockquote {
+	border-left: 4px solid #e0e0e0;
+	padding-left: 6px;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	margin-left: 0.5em;
+	font-style: italic;
+}
