@@ -32,6 +32,7 @@
 					<img alt="Axel Paris" src="images/axel-paris-256.jpg" class="u-photo" />
 					<div>
 						<a class="p-name u-url" href="https://aparis69.github.io/">Axel Paris</a>
+						<a class="obfuscated-email">aparis|adobe.com</a>
 						<ul>
 							<li><a class="p-org h-card" href="https://research.adobe.com/">Adobe, France</a></li>
 						</ul>
@@ -53,6 +54,7 @@
 					<img alt="Élie Michel" src="images/elie-michel-256.jpg" class="u-photo" />
 					<div>
 						<a class="p-name u-url" href="https://portfolio.exppad.com/">Élie Michel</a>
+						<a class="obfuscated-email">emichel|adobe.com</a>
 						<ul>
 							<li><a class="p-org h-card" href="https://research.adobe.com/">Adobe, France</a></li>
 						</ul>
@@ -225,6 +227,17 @@
 	</main>
 
 	<footer>&nbsp;</footer>
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", () => {
+			const emailAnchors = document.getElementsByClassName("obfuscated-email");
+			for (const element of emailAnchors) {
+				const email = element.innerText.replace('|', '@');
+				element.href = "mailto:" + email + "?subject=[EnvCG]";
+				element.innerText = "📧";
+			}
+		})
+	</script>
 </body>
 </html>
 
