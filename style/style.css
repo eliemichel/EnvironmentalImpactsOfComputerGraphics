@@ -58,6 +58,7 @@ header hgroup time .time {
 
 h2, h3 {
 	color: #333;
+	margin-top: 2em;
 	position: relative;
 }
 
@@ -193,7 +194,7 @@ ul.s-download-links li a:hover {
 
 .s-content {
 	text-align: justify;
-	line-height: 1.3em;
+	line-height: 1.5em;
 }
 
 .s-video {
@@ -215,6 +216,10 @@ img.s-slide-preview {
 	box-shadow: 2px 2px 9px 2px #00000014;
 }
 
+img.s-small-fig {
+	max-width: min(100%, 35em);
+}
+
 blockquote {
 	border-left: 4px solid #e0e0e0;
 	padding-left: 6px;
@@ -222,4 +227,16 @@ blockquote {
 	padding-bottom: 0.1em;
 	margin-left: 0.5em;
 	font-style: italic;
+}
+
+.s-toc {
+	/* font-size: 0.9em; */
+}
+
+.s-toc ul {
+	margin: 0;
+	padding-left: 1.8em;
+}
+.s-toc ul li {
+	margin: 0.2em 0;
 }
